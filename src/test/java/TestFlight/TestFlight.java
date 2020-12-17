@@ -14,7 +14,7 @@ public class TestFlight
 {
     WebDriver driver;
     @BeforeTest
-    public void driverFirefox()
+    public void driverChrome()
     {
         System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/resources/geckodriver");
         driver = new ChromeDriver();
