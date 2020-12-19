@@ -19,6 +19,8 @@ public class TestFlight
         System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/resources/geckodriver");
         driver = new ChromeDriver();
         driver.get("https://www.enuygun.com/ucak-bileti/");
+        driver.manage().window().maximize();
+
     }
 
     @Test(priority = 1)
